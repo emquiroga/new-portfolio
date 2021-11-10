@@ -1,0 +1,56 @@
+html {
+  box-sizing: initial;
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  position: relative;
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+  section {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+
+    h1,
+    h2,
+    h3 {
+      color: var(--text-primary);
+      padding: 0;
+      text-shadow: 1px 1px var(--bg-secondary);
+      @include breakpoint-up(large) {
+        text-shadow: 2px 2px var(--bg-secondary);
+      }
+    }
+    h2,
+    h3 {
+      font-family: $font-secondary;
+    }
+    h1 {
+      font-family: $font-primary;
+    }
+    p,
+    li,
+    input,
+    a {
+      font-family: $font-primary;
+    }
+    p,
+    li {
+      color: var(--text-primary);
+    }
+    svg,
+    path {
+      pointer-events: all;
+    }
+  }
+}

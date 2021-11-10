@@ -1,0 +1,17 @@
+import GifHub from "assets/images/GifHub.png"
+import SuperHero from "assets/images/SuperHero.png"
+import Calculator from "assets/images/Calculator.png"
+
+@media(min-width: ${sizes.breakPoints.tablet}) {
+        color: ${({ theme }) => theme.colors.textSecondary};
+        text-shadow: 1px 2px 0px${({ theme }) => theme.colors.special};
+        :nth-of-type(1){
+        background: url(${GifHub});
+        }
+        :nth-of-type(2){
+        background: url(${SuperHero});
+        }
+        :nth-of-type(3){
+        background: url(${Calculator});
+        }
+    }

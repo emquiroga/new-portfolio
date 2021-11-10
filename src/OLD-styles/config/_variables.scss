@@ -1,0 +1,84 @@
+//--COLORS--
+
+//Light
+
+$bg-primary: #f2e8e3;
+$bg-secondary: #a5a58d;
+$bg-primary-tr: #f2e8e380;
+$bg-tertiary: #f2cb8d;
+$text-primary: #081c15;
+$text-secondary: #1a4231;
+$special-one: #ff6b7a;
+
+//Dark
+
+$bg-primary-dark: #081c15;
+$bg-secondary-dark: #072c2580;
+$bg-primary-tr-dark: #081c1580;
+$bg-tertiary-dark: #5d273d;
+$text-primary-dark: #f2e8e3;
+$text-secondary-dark: #c7bfcf;
+$special-one-dark: #ff6b7a;
+
+//Themes
+.theme {
+  &.light {
+    --bg-primary: #{$bg-primary};
+    --bg-secondary: #{$bg-secondary};
+    --bg-primary-tr: #{$bg-primary-tr};
+    --bg-tertiary: #{$bg-tertiary};
+    --text-primary: #{$text-primary};
+    --text-secondary: #{$text-secondary};
+    --special-one: #{$special-one};
+  }
+
+  &.dark {
+    --bg-primary: #{$bg-primary-dark};
+    --bg-secondary: #{$bg-secondary-dark};
+    --bg-primary-tr: #{$bg-primary-tr-dark};
+    --bg-tertiary: #{$bg-tertiary-dark};
+    --text-primary: #{$text-primary-dark};
+    --text-secondary: #{$text-secondary-dark};
+    --special-one: #{$special-one-dark};
+  }
+}
+
+//Fonts
+$font-primary: "Cairo", sans-serif;
+$font-secondary: "Biryani", sans-serif;
+
+//Font sizes
+h1 {
+  --minFontSize: 20px;
+  --maxFontSize: 85px;
+  --scaler: 8vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+h2 {
+  --minFontSize: 16px;
+  --maxFontSize: 70px;
+  --scaler: 8vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+h3 {
+  --minFontSize: 12px;
+  --maxFontSize: 32px;
+  --scaler: 5vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+p,
+figcaption {
+  --minFontSize: 14px;
+  --maxFontSize: 22px;
+  --scaler: 2vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+$fluid-bg: clamp(48px, 7vw, 172px);
+$fluid-text: clamp(14px, 2vw, 24px);
+$fluid-text-s: clamp(14px, 2vw, 18px);
+$fluid-big: clamp(20px, 4vw, 40px);
+
+li {
+  font-size: $fluid-text-s;
+}

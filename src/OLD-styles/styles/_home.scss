@@ -1,0 +1,50 @@
+.home {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  gap: 0;
+  text-align: center;
+
+  h1 {
+    margin: auto;
+    letter-spacing: 5vw;
+    font-weight: 200;
+    grid-row: 2/7;
+  }
+  h3 {
+    margin: auto;
+    grid-row: 9/11;
+    color: var(--special-one);
+    font-weight: 600;
+    opacity: 0.5;
+  }
+  button {
+    margin: auto;
+    grid-row: 12/13;
+    background-color: transparent;
+    border-style: none;
+    width: 1.5rem;
+    height: auto;
+    position: absolute;
+    bottom: 1vh;
+    left: 50%;
+    transform: translate(-30%, -30%);
+    cursor: pointer;
+    overflow: visible;
+    @include breakpoint-up(large) {
+      width: 2.5rem;
+    }
+
+    svg {
+      path {
+        fill: var(--text-primary);
+        &:hover {
+          fill: var(--special-one);
+          animation: bounce 2s infinite;
+          transition: fill 100ms ease-in-out;
+        }
+      }
+    }
+  }
+}
