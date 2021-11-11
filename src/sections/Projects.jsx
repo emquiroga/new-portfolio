@@ -42,8 +42,10 @@ const Projects = ({ links }) => {
   };
 
   return (
-    <section>
-      <h2>Últimos proyectos</h2>
+    <section className="projectSection">
+      <h2>
+        <span>&lt;</span>Últimos proyectos<span>/&gt;</span>
+      </h2>
       <div className="projects-container">
         <Wrapper
           title="GifHub - Giphy SDK"

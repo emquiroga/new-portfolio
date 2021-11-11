@@ -42,4 +42,5 @@ border-radius: 50%;
 overflow: hidden;
 border: none;
 background: transparent;
+cursor: pointer;
 `

@@ -31,16 +31,16 @@ export const dark = {
             "body": "#081c15",
             "bg1": "#072C25",
             "bg2": "#2B121C",
-            "textPrimary": "#f2e8e3",
-            "textSecondary": "#c7bfcf",
+            "textPrimary": "#c7bfcf",
+            "textSecondary": "#f2e8e3",
             "special": "#ff6b7a",
             "button": {
                 "text": "#f2e8e3",
-                "background": "#072C25",
-                "boxShadow": "#2B121C"
+                "background": "#081c15",
+                "boxShadow": "#c7bfcf"
             },
             "icons": {
-                "background": "#f2e8e3",
+                "background": "#c7bfcf",
                 "hover": "#ff6b7a"
             },
             "links": {

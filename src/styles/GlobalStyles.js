@@ -21,10 +21,10 @@ body {
   font-family: ${({ theme }) => theme.fonts.primary};
 }
 section {
-    width: 100vw;
-    height: 100vh;
-    padding: 1rem 0 0 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 h1,
 h2,
@@ -37,7 +37,7 @@ h3 {
     text-shadow: 1px 1px 0px ${({ theme }) => theme.fonts.primary};
 }
 h1 {
-    font-size: ${sizes.fontSizes.xlarge};
+  font-size: ${sizes.fontSizes.xlarge};
 }
 ul{
   margin: auto;
@@ -54,8 +54,8 @@ li {
 }
 p,
 li {
-  color: ${({ theme }) => theme.fonts.primary};
-  font-size: ${sizes.fontSizes.medium};
+  color: ${({ theme }) => theme.colors.textPrimary};
+  font-size: ${sizes.fontSizes.small};
   padding: 0;
 }
 p {
@@ -76,7 +76,8 @@ figure {
 }
 img {
   width: 75%;
-  max-width: 500px;
+  max-width: 400px;
+  max-height: 400px;
   border-radius: 50%;
   margin: 0;
   padding: 0;
@@ -101,28 +102,4 @@ path{
 span {
   color: ${({ theme }) => theme.colors.special};
 }
-.button-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-.projects-container {
- width: 80%;
- padding: 0;
- margin: auto;
- display: flex;
- flex-direction: column;
-}
-.projects-container:hover > div div {
-    filter: blur(5px) opacity(60%);
-    transition: all 0.2s ease;
-  }
-
-  .projects-container div:hover div {
-    filter: blur(0px) opacity(100%);
-    transition: all 0.2s ease;
-  }
 `

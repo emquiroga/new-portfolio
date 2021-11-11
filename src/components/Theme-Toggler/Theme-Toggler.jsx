@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useCallback } from "react";
 import {
   TogglerWrapper,
   ThemeInput,
@@ -7,10 +8,20 @@ import {
   ThemeBall,
 } from "./styles";
 
-const ThemeToggler = () => {
+const ThemeToggler = ({ toggleTheme }) => {
+  const [checked, setChecked] = useState(false);
+  const toggleCheck = useCallback(() => {
+    setChecked(!checked);
+    toggleTheme();
+  }, [checked, toggleTheme]);
   return (
     <TogglerWrapper>
-      <ThemeInput type="checkbox" id="theme-toggler" />
+      <ThemeInput
+        type="checkbox"
+        id="theme-toggler"
+        onChange={toggleCheck}
+        checked={checked}
+      />
       <ThemeLabel htmlFor="theme-toggler">
         <ThemeSvg
           aria-hidden="true"

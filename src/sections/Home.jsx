@@ -3,18 +3,18 @@ import Portrait from "assets/images/portrait.jpg";
 
 const Home = () => {
   return (
-    <section>
-      <ThemeToggler />
+    <section className="homeSection">
       <figure>
         <img src={Portrait} alt="Retrato Emiliano Quiroga" />
       </figure>
       <h1>
         Hello<span>,</span> world<span>!</span>
       </h1>
-      <h3>Mi nombre es Emiliano Quiroga y soy Desarrollador Frontend</h3>
-
-      <h3> Contacto:</h3>
-      <ul>
+      <h3 className="homeSub">
+        Mi nombre es Emiliano Quiroga y soy Desarrollador Frontend
+      </h3>
+      <h3 className="homeContact"> Contacto:</h3>
+      <ul className="homeList">
         <li>
           <a
             href="https://www.linkedin.com/in/emquiroga/"

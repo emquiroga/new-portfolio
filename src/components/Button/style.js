@@ -6,7 +6,7 @@ margin: 0.5rem;
 text-decoration: none;
 text-align: center;
 padding: 0.35rem 1rem;
-width: 50px;
+width: 40%;
 height: 20px;
 font-weight: 700;
 background: ${({ theme }) => theme.colors.button.background};

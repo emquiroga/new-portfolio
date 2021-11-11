@@ -1,15 +1,19 @@
 const About = () => {
   return (
-    <section>
-      <h2>Sobre mí</h2>
-      <p>
+    <section className="aboutSection">
+      <h2 className="aboutTitle">
+        <span>&lt;</span>Sobre mí<span>/&gt;</span>
+      </h2>
+      <p className="aboutDescription">
         Vivo en la ciudad de La Plata, Buenos Aires, Argentina. Me apasionan los
         lenguajes, la comunicación y la tecnología. Como Desarrollador Frontend,
         encuentro en el oficio un medio para canalizar con mucha pasión mis
         habilidades y potenciar mis inquietudes.
       </p>
-      <div className="work">
-        <h3>Experiencia laboral</h3>
+      <div className="aboutWork">
+        <h3>
+          <span>&lt;</span>Experiencia laboral<span>/&gt;</span>
+        </h3>
         <p>
           Mientras comienzo mi carrera como desarrollador, dejo atrás casi diez
           años de oficio como profesional gastronómico, escritor y académico del
@@ -18,8 +22,10 @@ const About = () => {
           lenguas.
         </p>
       </div>
-      <div className="studies">
-        <h3>Estudios</h3>
+      <div className="aboutStudies">
+        <h3>
+          <span>&lt;</span>Estudios<span>/&gt;</span>
+        </h3>
         <p>
           Desde el año 2011 hasta el año 2014, cursé la Licenciatura en
           Literaturas Modernas en la Universidad Nacional de Cuyo. En ese
