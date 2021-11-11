@@ -1,4 +1,3 @@
-import ThemeToggler from "components/Theme-Toggler/Theme-Toggler";
 import Portrait from "assets/images/portrait.jpg";
 
 const Home = () => {
