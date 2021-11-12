@@ -2,10 +2,16 @@ import { createGlobalStyle } from "styled-components";
 import { sizes } from './Sizes.js'
 
 export const DisplayCongif = createGlobalStyle`
-body {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+.projects-container {
+ width: 80%;
+ height: 80%;
+ max-height: 80vh;
+ padding: 0;
+ margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
 }
 //Small size
 @media (min-width: ${sizes.breakPoints.small}) {

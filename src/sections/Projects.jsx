@@ -1,46 +1,9 @@
-import { useState } from "react";
 import ModalPortal from "components/Modal/Modal";
 import Wrapper from "components/Wrapper/Wrapper";
+import { useModal } from "hooks/useModal";
 
 const Projects = ({ links }) => {
-  const [modal, setModal] = useState(false);
-  const [live, setLive] = useState("");
-  const [repo, setRepo] = useState("");
-
-  const getLinks = (event) => {
-    let id = event.target.id;
-    let myLinks = {
-      repo: "",
-      live: "",
-    };
-    if (id === "1") {
-      myLinks = {
-        repo: links.project1.repo,
-        live: links.project1.live,
-      };
-    }
-    if (id === "2") {
-      myLinks = {
-        repo: links.project2.repo,
-        live: links.project2.live,
-      };
-    }
-    if (id === "3") {
-      myLinks = {
-        repo: links.project3.repo,
-        live: links.project3.live,
-      };
-    }
-    return myLinks;
-  };
-
-  const toggleModal = (id) => {
-    setModal(!modal);
-    const links = getLinks(id);
-    setRepo(links.repo);
-    setLive(links.live);
-  };
-
+  const { modal, live, repo, toggleModal } = useModal(links);
   return (
     <section className="projectSection">
       <h2>
@@ -57,7 +20,7 @@ const Projects = ({ links }) => {
         <Wrapper
           title="SuperHero API"
           id="2"
-          description=" ↳ React, Sass, react-router, axios, etc. App desarrollada para el
+          description=" ↳ React, Sass, react-router, formik, axios, etc. App desarrollada para el
           challenge de React.js de Alkemy Labs."
           openModal={toggleModal}
         />

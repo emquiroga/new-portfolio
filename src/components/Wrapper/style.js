@@ -11,7 +11,6 @@ width: 80%;
 max-width:500px;
 height: 30%;
 max-height: 250px;
-margin: 2rem auto;
 padding: 1rem;
 display: flex;
 justify-content: center;
@@ -30,7 +29,7 @@ font-family: ${({ theme }) => theme.fonts.secondary};
 font-weight: 700;
 color: ${({ theme }) => theme.colors.textSecondary};
 @media (min-width: ${sizes.breakPoints.tablet}){
-    font-size: ${sizes.fontSizes.large};
+    font-size: ${sizes.fontSizes.medium};
 }
 :hover {
     color: ${({ theme }) => theme.colors.special};
@@ -47,22 +46,6 @@ cursor: default;
 @media (min-width: ${sizes.breakPoints.tablet}){
     font-size: ${sizes.fontSizes.medium};
 
-}
-.button-container {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-.projects-container {
- width: 80%;
- padding: 0;
- margin: auto;
- display: flex;
- flex-direction: column;
 }
 .projects-container:hover > div div {
     filter: blur(5px) opacity(60%);

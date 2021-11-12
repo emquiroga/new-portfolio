@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { sizes } from './Sizes.js'
 
+
 export const GlobalStyles = createGlobalStyle`
 html {
   box-sizing: initial;
@@ -28,14 +29,16 @@ html {
 
 }
 body {
-  position: relative;
+  align-items: center;
   background-color: ${({ theme }) => theme.colors.body};
-  margin: 0;
-  padding: 10vh 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  display: flex;
+  flex-flow: column;
   font-family: ${({ theme }) => theme.fonts.primary};
+  margin: 0;
+  overflow-x: hidden;
+  padding: 10vh 0 0 0;
+  position: relative;
+  width: 100vw;
 }
 section {
   padding:  0;
@@ -50,7 +53,6 @@ h3 {
     padding: 0;
     margin: 1.25rem 0;
     text-align: center;
-    text-shadow: 1px 1px 0px ${({ theme }) => theme.fonts.primary};
 }
 h1 {
   font-size: ${sizes.fontSizes.xlarge};
@@ -76,7 +78,7 @@ li {
 p {
   width: 80%;
   padding: 0;
-  margin: auto;
+  margin: 1rem auto;
   text-align: justify
 }
 figure {

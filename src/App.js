@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
-import About from 'sections/About'
-import Home from 'sections/Home'
-import Projects from 'sections/Projects'
-import Tech from 'sections/Tech'
 import ThemeToggler from 'components/Theme-Toggler/Theme-Toggler'
+import Home from 'sections/Home'
+import About from 'sections/About'
+import Tech from 'sections/Tech'
+import Projects from 'sections/Projects'
+import Footer from 'components/Footer/Footer'
 
-import { links } from 'content'
+import { about, links, tech } from 'content'
 
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles/GlobalStyles'
@@ -25,9 +26,10 @@ const App = () => {
         <DisplayCongif />
                 <ThemeToggler toggleTheme={toggleTheme} />
                 <Home />
-                <About />
-                <Tech />
+                <About content={about}/>
+                <Tech content={tech}/>
                 <Projects links={links}/>
+                <Footer />
         </ThemeProvider>
     )
 }

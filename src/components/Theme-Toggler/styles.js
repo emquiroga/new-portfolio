@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const TogglerWrapper = styled.div`
 width: 3.5rem;
 position: absolute;
-top: 2.5%;
-right: 5%;
+top: 0.5%;
+right: 2.5%;
 background-color: ${({ theme }) => theme.colors.textPrimary};
 border-radius: 2rem;
 `

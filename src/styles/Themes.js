@@ -29,7 +29,7 @@ export const light = {
 export const dark = {
   "colors": {
             "body": "#081c15",
-            "bg1": "#072C25",
+            "bg1": "#062c65",
             "bg2": "#2B121C",
             "textPrimary": "#c7bfcf",
             "textSecondary": "#f2e8e3",
@@ -49,8 +49,8 @@ export const dark = {
             }
         },
     "fonts": {
-            "primary": "'Dongle', sans-serif",
-            "secondary": "'Metrophobic', sans-serif"
+        "primary": "'Urbanist', sans-serif",
+        "secondary": "'Metrophobic', sans-serif"
     }
 }
 
