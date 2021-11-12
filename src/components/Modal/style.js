@@ -17,7 +17,7 @@ export const ModalBg = styled.div`
 
 export const ModalWrapper = styled.div`
   background: ${props => props.theme.colors.body};
-  width: 60%;
+  width: 80%;
   max-width: 500px;
   padding: 10px 20px;
   height: 40vh;

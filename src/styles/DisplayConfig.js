@@ -1,12 +1,31 @@
 import { createGlobalStyle } from "styled-components";
 import { sizes } from './Sizes.js'
 
-
 export const DisplayCongif = createGlobalStyle`
-//Tablet
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+//Small size
+@media (min-width: ${sizes.breakPoints.small}) {
+  section {
+    height: auto;
+    min-height: 500px;
+  }
+  ul {
+    width: 60%;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+//Tablet sizing
 @media (min-width: ${sizes.breakPoints.tablet}) {
   body {
     line-height: 1.2;
+  }
+  section {
+    height: 100vh;
   }
   h2 {
     font-size: ${sizes.fontSizes.xlarge};
@@ -52,9 +71,18 @@ export const DisplayCongif = createGlobalStyle`
     padding-top: 3rem;
   }
 }
-//TALET
+//TABLET
 //DESKTOP 1024px
 @media (min-width: ${sizes.breakPoints.large}) {
+  figure {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
+ img {
+   max-width: 750px;
+   max-height: 750px;
+ } 
 .aboutSection,
 .techSection {
   display: grid;
@@ -79,42 +107,14 @@ export const DisplayCongif = createGlobalStyle`
   grid-row: 3/6;
 }
 }
-//DESKTOP
 //Desktop 1440px
 @media (min-width: ${sizes.breakPoints.xlarge}) {
   body {
     line-height: 1.5;
   }
-}
-
-
-
-
-
-
-//Classes
-.button-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-}
-.projects-container {
- width: 80%;
- padding: 0;
- margin: auto;
- display: flex;
- flex-direction: column;
-}
-.projects-container:hover > div div {
-    filter: blur(5px) opacity(60%);
-    transition: all 0.2s ease;
+  .homeList {
+    padding-top: 5rem;
   }
-
-.projects-container div:hover div {
-    filter: blur(0px) opacity(100%);
-    transition: all 0.2s ease;
 }
+//DESKTOP
 `

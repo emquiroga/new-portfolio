@@ -10,19 +10,35 @@ html {
 *::after {
   box-sizing: inherit;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px${({ theme }) => theme.colors.textPrimary};
+  box-shadow: inset 0 0 6px ${({ theme }) => theme.colors.textPrimary};
+
+}
 body {
   position: relative;
   background-color: ${({ theme }) => theme.colors.body};
   margin: 0;
-  padding: 0;
+  padding: 10vh 0;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   font-family: ${({ theme }) => theme.fonts.primary};
 }
 section {
-  padding: 0;
-  margin: 0;
+  padding:  0;
   width: 100vw;
   height: 100vh;
 }
@@ -45,7 +61,6 @@ ul{
   width: 80%;
   list-style: none;
   display: flex;
-  flex-flow: row;
   justify-content: center;
 }
 li {
@@ -66,18 +81,16 @@ p {
 }
 figure {
   width: 100%;
-  height: auto;
   max-height: 500px;
   margin: 0;
-  padding: 10% 0 0 0;
   display: block;
   display: flex;
   justify-content: center;
 }
 img {
   width: 75%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 50%;
   margin: 0;
   padding: 0;
