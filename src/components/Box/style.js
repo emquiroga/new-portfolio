@@ -11,7 +11,7 @@ line-height: 1.5;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
-text-align: left;
+text-align: justify;
 overflow: hidden;
 :hover{
     transition: all 0.6s ease;
