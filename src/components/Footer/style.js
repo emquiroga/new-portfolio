@@ -2,16 +2,18 @@ import styled from "styled-components";
 import { sizes } from "styles/Sizes";
 
 export const StyledFooter = styled.footer`
-width: 100%;
-height: auto;
+width: 100vw;
+height: 2rem;
 margin: 0;
 padding: 0;
 overflow: hidden;
 background-color: ${props => props.theme.colors.textSecondary};
 font-family: ${props => props.theme.fonts.primary};
-position: absolute;
-bottom: 0;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
 @media  (min-width: ${sizes.breakPoints.large}) {
+    height: 3rem;
     margin-top: 3rem;
 }
 `
@@ -23,7 +25,7 @@ width: 100%;
 text-align: justify;
 color: ${props => props.theme.colors.bg1};
 display: flex;
-flex-flow: row;
+flex-flow: row wrap;
 justify-content: center;
 @media  (min-width: ${sizes.breakPoints.large}) {
     font-size: ${sizes.fontSizes.medium};

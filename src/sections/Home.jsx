@@ -2,7 +2,7 @@ import Portrait from "assets/images/portrait.jpg";
 
 const Home = () => {
   return (
-    <section className="homeSection">
+    <section className="animate__animated animate__fadeInLeft">
       <figure>
         <img src={Portrait} alt="Retrato Emiliano Quiroga" />
       </figure>

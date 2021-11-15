@@ -5,21 +5,20 @@ const COMMONS = {
     transition: "all 150ms ease-in-out",
 
 }
-
 export const StyledWrapper = styled.div`
-width: 80%;
+width: 100%;
 max-width:500px;
-height: 30%;
 max-height: 250px;
-padding: 1rem;
+padding: 1rem 0;
+margin: .5rem 0;
 display: flex;
-justify-content: center;
-align-items: center;
 text-align: center;
+border: 1px inset ${props => props.theme.colors.textPrimary};
 :hover{
-    transition: ${COMMONS.transition};
-    border: 1px inset ${({ theme }) => theme.colors.textSecondary};
+    transform: scale(1.025);
+    transition: all 0.6s ease;
     box-shadow: 5px 6px 1px ${({ theme }) => theme.colors.special};
+
 }
 `
 export const Title = styled.div`

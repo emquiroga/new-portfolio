@@ -31,19 +31,26 @@ html {
 body {
   align-items: center;
   background-color: ${({ theme }) => theme.colors.body};
-  display: flex;
-  flex-flow: column;
   font-family: ${({ theme }) => theme.fonts.primary};
+  color: ${({ theme }) => theme.colors.textPrimary};
   margin: 0;
+  display: flex;
+  flex-flow: column wrap;
   overflow-x: hidden;
-  padding: 10vh 0 0 0;
+  padding: 0;
   position: relative;
   width: 100vw;
 }
 section {
   padding:  0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+}
+section:nth-of-type(1){
+  margin: 10vh 0 20vh 0;
+}
+main {
+  padding: 0;
+  width: 100%;
 }
 h1,
 h2,
@@ -60,24 +67,26 @@ h1 {
 ul{
   margin: auto;
   padding: 0;
-  width: 80%;
+  width: 80vw;
+  max-width: 250px;
   list-style: none;
   display: flex;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 li {
-  margin: 0.5rem 1rem;
+  margin: 0;
   padding: 0;
 }
 p,
-li {
+li,
+div {
   color: ${({ theme }) => theme.colors.textPrimary};
   font-size: ${sizes.fontSizes.small};
   padding: 0;
 }
 p {
-  width: 80%;
-  padding: 0;
   margin: 1rem auto;
   text-align: justify
 }
