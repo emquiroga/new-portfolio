@@ -12,6 +12,7 @@ display: flex;
 flex-direction: column;
 text-align: justify;
 align-items: flex-start;
+overflow: hidden;
 :hover{
     transition: all 0.6s ease;
     transform: translate(-.25rem, -1rem);

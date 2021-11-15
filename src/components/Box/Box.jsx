@@ -10,7 +10,9 @@ const Box = ({ title, content }) => {
         {title}
         <span>/&gt;</span>
       </StyledTitle>
-      {isOpen && <div>{content}</div>}
+      {isOpen && (
+        <div className="animate__animated animate__fadeInUp">{content}</div>
+      )}
     </StyledBox>
   );
 };

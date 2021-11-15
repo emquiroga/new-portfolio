@@ -19,7 +19,7 @@ const ProjectContainer = ({ title, links, content }) => {
         <span>/&gt;</span>
       </StyledTitle>
       {isOpen && (
-        <ProjectsWrapper>
+        <ProjectsWrapper className="animate__animated animate__fadeInUp">
           <Wrapper
             title="GifHub - Giphy SDK"
             id="1"
