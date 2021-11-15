@@ -7,7 +7,7 @@ import { ModalBg, ModalWrapper, ModalClose } from "./style";
 const Modal = ({ onClose, live, repo }) => {
   return (
     <ModalBg>
-      <ModalWrapper>
+      <ModalWrapper className="animate__animated animate__slideInDown">
         <ModalClose onClick={onClose}>
           <svg
             aria-hidden="true"

@@ -7,21 +7,18 @@ export const DisplayCongif = createGlobalStyle`
   body {
     line-height: 1.2;
   }
-  section:nth-of-type(1) {
+  section {
     height: 100vh;
     margin: 10vh 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
   h2 {
     font-size: ${sizes.fontSizes.xlarge};
   }
   p, div {
     font-size: ${sizes.fontSizes.medium};
-  }
-  section:nth-of-type(1) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-
   }
   figure {
     grid-column: 1;

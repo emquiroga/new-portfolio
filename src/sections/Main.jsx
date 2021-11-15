@@ -12,7 +12,7 @@ import {
 
 const Main = () => {
   return (
-    <main className="animate__animated animate__fadeInDown">
+    <main className="animate__animated animate__fadeInLeft">
       <Box title="Sobre mí" content={about} />
       <Box title="Experiencia Laboral" content={work} />
       <Box title="Estudios" content={studies} />

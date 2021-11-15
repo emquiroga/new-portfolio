@@ -44,8 +44,6 @@ body {
 section {
   padding:  0;
   width: 100%;
-}
-section:nth-of-type(1){
   margin: 10vh 0 20vh 0;
 }
 main {

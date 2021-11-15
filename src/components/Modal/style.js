@@ -29,7 +29,7 @@ export const ModalWrapper = styled.div`
   align-items: center;
   position: relative;
   border: 1px inset ${props => props.theme.colors.textSecondary};
-  box-shadow: 2px 2px 1px 0px ${props => props.theme.colors.textSecondary};
+  box-shadow: 6px 6px 1px 0px ${props => props.theme.colors.special};
 `
 export const ModalClose = styled.button`
 display: block;
