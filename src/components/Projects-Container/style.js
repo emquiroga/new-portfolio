@@ -13,11 +13,11 @@ flex-direction: column;
 text-align: justify;
 align-items: flex-start;
 overflow: hidden;
+border: 1px inset ${({ theme }) => theme.colors.textSecondary};
+transition: all 0.4s ease-in-out;
 :hover{
-    transition: all 0.6s ease;
-    transform: translate(-.25rem, -1rem);
-    border: 1px inset ${({ theme }) => theme.colors.textSecondary};
-    box-shadow: 5px 6px 1px ${({ theme }) => theme.colors.special};
+    transform: translate(4px, -4px);
+    box-shadow: -8px 8px 0 ${({ theme }) => theme.colors.special};
 }
 `
 export const ProjectsWrapper = styled.div`

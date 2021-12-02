@@ -116,9 +116,9 @@ path {
 }
 path{
   fill: ${({ theme }) => theme.colors.icons.background};
+  transition: all 250ms ease-in-out;
   :hover {
     fill: ${({ theme }) => theme.colors.icons.hover};
-    transition: all 150ms ease-in-out;
   }
 }
 span {

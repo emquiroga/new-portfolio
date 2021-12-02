@@ -13,12 +13,11 @@ padding: 1rem 0;
 margin: .5rem 0;
 display: flex;
 text-align: center;
-border: 1px inset ${props => props.theme.colors.textPrimary};
+border: 1px inset ${({ theme }) => theme.colors.textSecondary};
 :hover{
     transform: scale(1.025);
-    transition: all 0.6s ease;
-    box-shadow: 5px 6px 1px ${({ theme }) => theme.colors.special};
-
+    transition: all 0.4s ease;
+    border: 1px inset ${({ theme }) => theme.colors.special};
 }
 `
 export const Title = styled.div`
