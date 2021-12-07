@@ -40,6 +40,8 @@ body {
   padding: 0;
   position: relative;
   width: 100vw;
+  white-space: pre-wrap;
+
 }
 section {
   padding:  0;
