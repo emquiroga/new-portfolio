@@ -49,7 +49,7 @@ export const DisplayCongif = createGlobalStyle`
   .homeList {
     grid-column: 2;
     grid-row: 5;
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 }
 //DESKTOP 1024px
@@ -77,8 +77,5 @@ export const DisplayCongif = createGlobalStyle`
   div{
    line-height: 1.6;
  }
-  .homeList {
-    padding-top: 5rem;
-  }
 }
 `
