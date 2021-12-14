@@ -21,19 +21,19 @@ const ProjectContainer = ({ title, links, content }) => {
       {isOpen && (
         <ProjectsWrapper className="animate__animated animate__fadeInUp">
           <Wrapper
-            title="GifHub - Giphy SDK"
+            title={content.title1}
             id="1"
             description={content.pro1}
             openModal={toggleModal}
           />
           <Wrapper
-            title="SuperHero API"
+            title={content.title2}
             id="2"
             description={content.pro2}
             openModal={toggleModal}
           />
           <Wrapper
-            title="Calculadora de Pagos"
+            title={content.title3}
             id="3"
             description={content.pro3}
             openModal={toggleModal}
