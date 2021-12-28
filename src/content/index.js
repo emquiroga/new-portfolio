@@ -1,4 +1,4 @@
-export const about = "Vivo en la ciudad de La Plata, Buenos Aires, Argentina. \n\nSoy un apasionado por los lenguajes, la tecnología y la comunicación. \n\nPoseo un dominio intermedio del idioma inglés y básico del portugués. \n\nEncuentro en el desarrollo web un medio ideal para canalizar mis intereses, conocimientos y creatividad."
+export const about = "Vivo en la ciudad de La Plata, Buenos Aires, Argentina. \n\nSoy un apasionado por los lenguajes, la tecnología y la comunicación. \n\nPoseo un nivel A2/B1 en idioma inglés y A1 en portugués. \n\nEncuentro en el desarrollo web un medio ideal para canalizar mis intereses, conocimientos y creatividad."
 export const work = "En la actualidad me encuentro trabajando como Web Developer freelancer. Antes de insertarme en el mundo IT, ejercí por casi diez años como profesional gastronómico y escritor. \n\nEn el primero, logré destacar en puestos de jerarquía que fortalecieron mis capacidades de administración y planificación grupal, a la vez que me ejercitaron en la toma de decisiones clave para el desempeño del negocio. \n\nOtras experiencias laborales relevantes en mi currículum incluyen Atención al Cliente, Data Entry y Corrector/Redactor."
 export const studies = "Desde el año 2011 hasta el año 2014, cursé la Licenciatura en Literaturas Modernas en la Universidad Nacional de Cuyo. En ese trayecto, participé como ayudante de cátedra en tres diferentes oportunidades, potenciando mis habilidades pedagógicas y de investigación. Durante los años 2019 y 2020 retomé dicha carrera en la Universidad Nacional de La Plata. \n\nDesde comienzos del 2021, decidí reorientar mis objetivos profesionales hacia la programación, con planes a futuro de cursar una tecnicatura en sistemas."
 export const techs = "Como Desarrollador Frontend, tengo conocimientos en JavaScript (ES6), React, Redux, React-Router, React-Testing (incipiente), HTML, CSS, Sass, Bootstrap, Materialize y otros frameworks de estilos. \n\nTambién cuento con conocimientos en bases de datos relacionales (MySQL), backend con PHP (Laravel) y desarrollo con arquitectura  MVC."
@@ -9,8 +9,8 @@ export const links = {
         "repo": "https://github.com/emquiroga/loopstudios-fem"
     },
     "project2" : {
-        "live" : "https://emquiroga.github.io/dimacofi/",
-        "repo": "https://github.com/emquiroga/dimacofi"
+        "live" : "https://emquiroga.github.io/dimacofi-fullpage/",
+        "repo": "https://github.com/emquiroga/dimacofi-fullpage"
     },
     "project3" : {
         "live" : "https://buller-page.vercel.app/",
