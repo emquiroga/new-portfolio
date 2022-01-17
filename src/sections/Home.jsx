@@ -85,7 +85,7 @@ const Home = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1Qh2LWDBK8I7DXEg5M1hSMB-suj-51FBC/view"
+            href="https://drive.google.com/file/d/16POk_AXtASMkPffgbcOuLtgwukVR1VAl/view"
             rel="noreferrer"
             target="_blank"
             title="Curriculum Vitae"
